@@ -29,7 +29,7 @@ public class Main {
 
         var friend = 19;
         System.out.println(friend);
-        friend = friend * 2;
+        friend = friend + 2;
         System.out.println(friend);
         friend = friend / 7;
         System.out.println(friend);
@@ -63,8 +63,8 @@ public class Main {
         var companyEmpioyees = totalHoursWork / hoursPerWorker;
         System.out.println("Всего работников в компании - " + companyEmpioyees + " человек.");
         companyEmpioyees += 94;
-        hoursPerWorker = totalHoursWork / companyEmpioyees;
-        System.out.println("Если в компании работает " + companyEmpioyees + " человек, то всего " + hoursPerWorker + " часов работы может быть поделено между сотрудниками");
+        var totalHoursWork2 = companyEmpioyees * hoursPerWorker;
+        System.out.println("Если в компании работает " + companyEmpioyees + " человек, то всего " + totalHoursWork2 + " часов работы может быть поделено между сотрудниками");
 
     }
 }
