@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args)
 
     {
+
         var dog = 8.0;
         var cat = 3.6;
         var paper = 763789;
@@ -36,5 +37,25 @@ public class Main {
         System.out.println(frog);
         frog = frog + 4;
         System.out.println(frog);
+
+        var boxer1 = 78.2;
+        var boxer2 = 82.7;
+        var totalWeight = boxer1 + boxer2;
+        System.out.println("Общий вес двух бойцов равен " + totalWeight + " кг");
+        var weightDifference = boxer1 - boxer2;
+        System.out.println("Разница в весе бойцов составляет " + weightDifference);
+        var weightDifference2 = boxer2 - boxer1;
+        System.out.println("Разница веса бойцов вычетанием из большего меньшего составляет " + weightDifference2);
+        var weightDifference3 = (boxer2 % boxer1);
+        System.out.println("Разница веса бойцов функцией остатка деления равен " + weightDifference3);
+
+        var totalHoursWork = 640;
+        var hoursPerWorker = 8;
+        var companyEmpioyees = totalHoursWork / hoursPerWorker;
+        System.out.println("Всего работников в компании - " + companyEmpioyees + " человек.");
+        companyEmpioyees += 94;
+        hoursPerWorker = totalHoursWork / companyEmpioyees;
+        System.out.println("Если в компании работает " + companyEmpioyees + " человек, то всего " + hoursPerWorker + " часов работы может быть поделено между сотрудниками");
+
     }
 }
